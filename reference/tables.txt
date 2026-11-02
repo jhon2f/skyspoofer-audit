@@ -1,0 +1,23 @@
+PUBLIC (readable via anon):
+  reseller_stores
+  site_updates
+  role_permissions
+
+RLS-LOCKED (return [] via anon):
+  app_users
+  user_subscriptions
+  license_keys
+  reseller_keys
+  reseller_applications
+  user_roles
+  referral_codes
+  trial_redemptions
+  downloadable_files
+  support_tickets
+  staff_profiles
+  user_profiles
+  user_variables
+  chat_messages
+
+license_keys columns: id, key, status, note, created_at, duration_days, used_at, used_by, subscription_name
+license_keys enum: license_key_status ("unused", ...)
